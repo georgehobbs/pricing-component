@@ -1,0 +1,259 @@
+/* ----------------------------------------------- */
+/* -------------- Main --------------------------  */
+/* ----------------------------------------------- */
+body {
+  text-align: center;
+  margin: auto;
+  background: #f6f6fe;
+  background-image: url('../images/bg-bottom.svg'), url('../images/bg-top.svg');
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  color: #6e728f;
+  width: 75%;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.switch-row {
+  display: flex;
+  margin: 40px 0 50px 37%;
+  text-align: center;
+}
+
+.switch-label {
+  font-weight: 700;
+  color: #b9b8c5;
+  padding: 2px 25px 0 25px;
+}
+
+/* ----------------------------------------------- */
+/* -------------- Card Inner Text ---------------  */
+/* ----------------------------------------------- */
+.white-card {
+  margin: 25px 0;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.purple-card {
+  background-image: linear-gradient(#a0a3ef, #6b6fde);
+  border-radius: 8px;
+  color: white;
+  padding: 25px 15px;
+}
+
+.plan {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.dollar {
+  font-size: 2rem;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.cost {
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: #47495f;
+}
+
+.purple-card .cost {
+  color: white;
+}
+
+.hide-monthly {
+  display: none;
+}
+
+.hide-annually {
+  display: none;
+}
+
+.bullet {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03rem;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  margin: 15px;
+  border-color: #dddedd;
+}
+
+.purple-card hr {
+  border-color: #a5aafb;
+}
+
+/* ---- BUTTONS ---- */
+.btn {
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 35px auto 50px;
+  letter-spacing: 0.1rem;
+  height: 10%;
+}
+
+.purple-button {
+  background-image: linear-gradient(to right, #a0a3ef, #6b6fde);
+  color: white;
+}
+
+.purple-button:hover {
+  background-image: none;
+  background-color: white;
+  border: 1px solid #6b6fde;
+  color: #6b6fde;
+}
+
+.white-button {
+  background-color: white;
+  color: #6b6fde;
+}
+
+.white-button:hover {
+  background-color: none;
+  border: 1px solid white;
+  color: white;
+  background-image: linear-gradient(#7579e1, #7175e0);
+}
+
+/* ----------------------------------------------- */
+/* -------------- Switch ------------------------  */
+/* ----------------------------------------------- */
+.switcher {
+  text-align: right;
+  padding-top: 25px;
+}
+
+.dark-mode-text {
+  text-align: right;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-right: 10px;
+  color: var(--secondary-font);
+}
+
+.switch {
+  text-align: right;
+  position: relative;
+  width: 55px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #9a9fed, #8388e4);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  -webkit-transition: .2s;
+  bottom: 4px;
+  background-color: white;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(28px);
+}
+
+/* ----------------------------------------------- */
+/* -------------- ATTRIBUTION -------------------  */
+/* ----------------------------------------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+
+body {
+  width: 85%;
+  background-position: 100% 100%, 100px 0%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+label {
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+}
+
+.switch-row {
+  display: flex;
+  text-align: center;
+  margin: 40px 0 50px 0;
+  padding-left: 10px;
+}
+
+.switch-label {
+  font-weight: 700;
+  color: #b9b8c5;
+  padding: 2px 5px 0 5px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.purple-card {
+  padding: 0 15px;
+}
+
+.plan {
+  font-size: 1.25rem;
+}
+
+.btn {
+  font-size: 0.8rem;
+
+}
